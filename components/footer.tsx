@@ -1,3 +1,7 @@
+/**
+ * Footer component. It displays the current year and a copyright notice.
+ * @returns A JSX element representing the footer.
+ */
 const Footer = () => {
     const currentYear = new Date().getFullYear();
     return ( 

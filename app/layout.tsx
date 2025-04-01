@@ -17,7 +17,22 @@ export const metadata: Metadata = {
   description: `${APP_DESCRIPTION}`,
   metadataBase: new URL(SERVER_URL)
 };
-
+ 
+/**
+ * The root layout component. It sets up the document structure and applies
+ * the font and theme providers. It also sets up the html and body tags and
+ * applies the Roboto font.
+ *
+ * @remarks
+ * This component is special-cased by Next.js and is not included in the
+ * component tree. It is used to set up the document structure and to wrap
+ * the entire app with providers.
+ *
+ * @example
+ * <RootLayout>
+ *   <App />
+ * </RootLayout>
+ */
 export default function RootLayout({children}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en" suppressHydrationWarning>

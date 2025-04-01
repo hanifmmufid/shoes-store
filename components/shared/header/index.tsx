@@ -3,6 +3,13 @@ import Image from "next/image";
 import { APP_NAME } from "@/lib/constants";
 import Menu from "./menu";
 
+/**
+ * Renders the header component of the application, which includes:
+ * - A logo image linked to the homepage.
+ * - The application name displayed alongside the logo, visible on large screens.
+ * - A navigation menu component.
+ */
+
 const Header = () => {
   return (
     <header className="w-full border-b">

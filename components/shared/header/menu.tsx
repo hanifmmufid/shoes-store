@@ -11,6 +11,16 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
+/**
+ * The header menu component. This component is responsive, and will switch from
+ * a horizontal menu bar to a vertical menu sheet on smaller screens.
+ *
+ * The menu contains a mode toggle, a link to the cart, and a link to sign in.
+ *
+ * The menu is hidden on md and larger screens.
+ *
+ * @returns The header menu component.
+ */
 const Menu = () => {
   return (
     <div className="flex justify-end gap-3">
